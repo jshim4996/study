@@ -16,4 +16,74 @@ fn main() {
    }
 
    println!("The value of shadowing is: {}", shadowing);
+
+   let spaces = "   ";
+   let spaces = spaces.len();
+   println!("The value of spaces is: {}", spaces);
+
+   //숫자 타입
+   let num = 5;
+   let num: i32 = 50;
+
+   // 부동 소수점 타입
+   let x = 2.0; //f64
+   let y: f32 = 3.0; //f32
+
+   let sum = x + y;
+   println!("The sum of x and y is: {}", sum);
+
+   // 연산자
+   // 덧셈
+   let sum  = 5 + 10;
+
+   // 뺄셈
+   let difference = 95.5 - 4.3;
+
+   // 곱셈
+   let product = 4 * 30;
+
+   // 나눗셈
+   let quotient = 56.7 / 32.2;
+   let trunceted = -5 / 3; // 결과값은 -1
+
+   //나머지 연산
+   let remainder = 43 % 5;
+
+   println!("The sum of x and y is: {}", sum);
+   println!("The difference of x and y is: {}", difference);
+   println!("The product of x and y is: {}", product);
+   println!("The quotient of x and y is: {}", quotient);
+   println!("The trunceted of x and y is: {}", trunceted);
+   println!("The remainder of x and y is: {}", remainder);
+
+   // 불리언 타입
+   let t = true;
+   let f: bool = false; // 명시적 타입의 애너테이션
+
+   println!("The value of t is: {}", t);
+   println!("The value of f is: {}", f);
+
+   // 문자 타입
+   let c = 'z';
+   let z: char = 'z'; // 명시적 타입의 애너테이션
+   println!("The value of c is: {}", c);
+   println!("The value of z is: {}", z);
+
+   let heart_eyed_cat = '😻';
+   println!("The value of heart_eyed_cat is: {}", heart_eyed_cat);
+
+   // 튜플타입
+   let tup: (i32, f64, u8) = (500, 6.4, 1);
+   let tup = (500, 6.4, 1);
+
+   let (x,y,z) = tup;
+
+   println!("The value of y is: {y}");
+   
+   let finx_humdered = tup.0;
+   let six_point_four = tup.1;
+   let one = tup.2;
+
+   let emty:() = ();
+
 }
