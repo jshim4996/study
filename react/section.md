@@ -23,3 +23,7 @@
   - 컴포넌트 합성을 통해 컴포넌트 재사용성을 높일수 있다.
   - 컴포넌트에 event에 함수는 () 를 생략 한다.
     - ex : <button onClick={handleClick}>test</button>
+  - 리액트는 컴포넌트 함수를 코드 내에서 처음 발견했을때 한번만 실행 한다.\
+  - reactHook 는 컴포넌트 함수 안 또는 커스텀 hook 안에서만 호출 해야한다. => 함수 내부 함수에서 호출 하면 오류
+  - useState 는 리액트 hook 으로서 저장된 값의 변경이 있을경우 컴포넌트를 재실행 한다. => 값과 값을 변환할 함수를 재공
+    ex : const [selectTopic, setSelectTopic] = useState("Please Click on the Tab");
