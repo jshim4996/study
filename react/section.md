@@ -27,3 +27,8 @@
   - reactHook 는 컴포넌트 함수 안 또는 커스텀 hook 안에서만 호출 해야한다. => 함수 내부 함수에서 호출 하면 오류
   - useState 는 리액트 hook 으로서 저장된 값의 변경이 있을경우 컴포넌트를 재실행 한다. => 값과 값을 변환할 함수를 재공
     ex : const [selectTopic, setSelectTopic] = useState("Please Click on the Tab");
+  - jsx 에서 class 대신 className 을 사용한다.
+  - jsx 에서 className 은 동적으로 사용 할 수 있다.
+  - jsx 에서는 배열을 사용할 수 있다.
+  - jsx 내부에서 map 함수를 사용하여 반복적인 component 동일하게 출력 할 수 있다.
+  - jsx 반복문에 key를 설정하지 않을경우 화면에서 오류가 발생 한다.
